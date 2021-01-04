@@ -1,0 +1,4 @@
+resource.type="bigquery_resource"
+protoPayload.methodName = "jobservice.jobcompleted"
+protoPayload.serviceData.jobCompletedEvent.job.jobName.projectId = "exampletrigger"
+protoPayload.serviceData.jobCompletedEvent.job.jobConfiguration.query.statementType="UPDATE"
