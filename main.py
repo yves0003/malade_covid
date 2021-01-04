@@ -21,8 +21,7 @@ def create_contacts_to_hs():
     #global blob
     global contacts
 
-    sql = "SELECT * FROM covid_data.malades"
-
+    sql = "SELECT * FROM exampleDataset.exampleData"
     bq_client = bigquery.Client(project=config.config_vars['project_id'])
     rows_df = bq_client.query(sql).to_dataframe()
     rows_df_length = len(rows_df.index)
