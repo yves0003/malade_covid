@@ -32,7 +32,8 @@ def create_contacts_to_hs():
         try:
             contact = transform_data(x, rows_df)
             email = contact['email']
-            url = f"https://api.hubapi.com/contacts/v1/contact/createOrUpdate/email/{email}/?hapikey=d8d8f703-376c-4ab3-998f-2205a8df43be"
+            #get api key
+            url = f"https://api.hubapi.com/contacts/v1/contact/createOrUpdate/email/{email}/?hapikey=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 
             r = requests.post(url, json= contact)
 
